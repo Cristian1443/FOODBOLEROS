@@ -77,17 +77,22 @@ body {
     height: var(--header-height);
     padding: 0 var(--spacing-unit);
     position: relative;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
 }
 
 .logo {
     text-decoration: none;
     display: flex;
     align-items: center;
+    height: 100%;
+    padding: 0.5rem 0;
 }
 
 .logo-img {
-    height: 60px;
+    height: 50px;
     width: auto;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -419,7 +424,7 @@ body {
 
     .header-content {
         justify-content: space-between;
-        padding: 0;
+        padding: 0 1rem;
     }
 
     .menu-toggle {
