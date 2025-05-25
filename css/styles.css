@@ -86,12 +86,21 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.logo-container {
+    height: 60px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-img {
-    height: 50px;
+    height: 100%;
     width: auto;
+    max-width: 200px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -658,8 +667,12 @@ body {
         order: 8;
     }
 
-    .logo-img {
+    .logo-container {
         height: 40px;
+    }
+    
+    .logo-img {
+        max-width: 150px;
     }
 }
 
@@ -672,8 +685,12 @@ body {
         gap: 0.2rem;
     }
 
-    .logo {
-        font-size: 1.5rem;
+    .logo-container {
+        height: 40px;
+    }
+    
+    .logo-img {
+        max-width: 150px;
     }
 
     .nav-menu.active {
@@ -2437,5 +2454,12 @@ blockquote::before {
 @media (min-width: 769px) {
     .main-sections-container {
         display: block;
+    }
+}
+
+/* Ajuste específico para GitHub Pages */
+@media screen and (min-width: 769px) {
+    .logo-container {
+        min-width: 180px;
     }
 } 
