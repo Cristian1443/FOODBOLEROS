@@ -3,12 +3,12 @@
     "short_name": "Foodboleros",
     "icons": [
         {
-            "src": "FOODBOLEROS/isotipos/isotipo hamburguesa principal.png",
+            "src": "./FOODBOLEROS/isotipos/isotipo hamburguesa principal.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "FOODBOLEROS/isotipos/isotipo hamburguesa principal.png",
+            "src": "./FOODBOLEROS/isotipos/isotipo hamburguesa principal.png",
             "sizes": "512x512",
             "type": "image/png"
         }
