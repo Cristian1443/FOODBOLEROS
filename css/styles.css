@@ -80,12 +80,19 @@ body {
 }
 
 .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--accent-color);
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
 }
 
 /* Navigation */
@@ -644,6 +651,10 @@ body {
 
     .contact-section {
         order: 8;
+    }
+
+    .logo-img {
+        height: 40px;
     }
 }
 
